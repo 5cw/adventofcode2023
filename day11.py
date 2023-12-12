@@ -1,6 +1,6 @@
-import itertools
+import itertools, getinput
 
-inp = open('day11input.txt').readlines()
+inp = getinput.fetchlines()
 rows = [i for i in range(len(inp)) if '#' not in inp[i]]
 cols = [i for i in range(len(inp[0])) if '#' not in [line[i] for line in inp]]
 for factor in [2, 1000000]:
