@@ -22,4 +22,4 @@ def fetch():
 
 
 def fetchlines():
-    return fetch().strip().split('\n')
+    return fetch().strip().splitlines()
